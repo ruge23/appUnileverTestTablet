@@ -1,0 +1,38 @@
+<ion-content>
+    <canvas #homepagecanvas></canvas>
+<!--  <img src="{{fotomergeada}}"> -->
+<div id="bubbles">
+  <div class="bubble x1">
+    <img src="../../assets/imgs/burbuja1.png" alt="">
+  </div>
+  <div class="bubble x3">
+    <img src="../../assets/imgs/burbuja2.png" alt="">      
+  </div>
+  <div class="bubble x9">
+    <img src="../../assets/imgs/burbuja1.png" alt="">      
+  </div>
+  <div class="bubble x2">
+    <img src="../../assets/imgs/burbuja1.png" alt="">
+  </div>
+  <div class="bubble x4">
+    <img src="../../assets/imgs/burbuja2.png" alt="">      
+  </div>
+  <div class="bubble x5">
+    <img src="../../assets/imgs/burbuja1.png" alt="">      
+  </div>
+</div>
+ <!-- <ion-fab bottom center>
+   <button (click)="subiryparticipar()" ion-fab color="secondary">Participar con esta foto</button>
+ </ion-fab>
+ <ion-fab bottom center>
+   <button (click)="descartar()" ion-fab color="primary">Descartar Foto</button>
+ </ion-fab>
+ <ion-fab bottom center>
+   <button (click)="descargar()" ion-fab color="danger">Guardar Foto</button>
+ </ion-fab> -->
+ <div class="botones-opcion-foto">
+   <!-- <button ion-button color="participar" *ngIf="showUI" (click)="subiryparticipar()">Participar con esta Foto</button> -->
+   <button ion-button color="guardar" *ngIf="showUI" (click)="descargar()">Guardar Foto</button>
+   <button ion-button color="descartar" *ngIf="showUI" (click)="descartar()">Descartar Foto</button>  
+  </div>
+</ion-content>
